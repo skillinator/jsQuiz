@@ -1,6 +1,6 @@
 # jsQuiz
 
-this is a little javaScript Quiz example
+this is a little javaScript Quiz example structure, with example answers
 
 The correct answers are:
 
