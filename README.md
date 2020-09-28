@@ -2,7 +2,7 @@
 
 this is a little javaScript Quiz example structure, with example answers
 
-The correct answers are:
+The correct example answers are:
 
 Q1: 3
 
