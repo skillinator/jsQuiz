@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="jsQuizStyle.css">
+    <body>
+	    <header>
+		    <h1>QUIZ NAME</h1>
+		</header>
+		
+		<main>
+		    <a class="questipnClass">QUESITION 1</a>
+			<p><button name="q1a1" class="a1Class" id="q1a1" onclick="question1a1()">ANSWER 1</button>
+			<button name="q1a2" class="a2Class" id="q1a2" onclick="question1a2()">ANSWER 2</button>
+			<button name="q1a3" class="a3Class" id="q1a3" onclick="question1a3()">ANSWER 3</button>
+			<button name="q1a4" class="a4Class" id="q1a4" onclick="question1a4()">ANSWER 4</button></p>
+			
+			<a class="questipnClass">QUESITION 2</a>
+			<p><button name="q2a1" class="a1Class" id="q2a1" onclick="question2a1()">ANSWER 1</button>
+			<button name="q2a2" class="a2Class" id="q2a2" onclick="question2a2()">ANSWER 2</button>
+			<button name="q2a3" class="a3Class" id="q2a3" onclick="question2a3()">ANSWER 3</button>
+			<button name="q2a4" class="a4Class" id="q2a4" onclick="question2a4()">ANSWER 4</button></p>
+			
+			<a class="questipnClass">QUESITION 3</a>
+			<p><button name="q3a1" class="a1Class" id="q3a1" onclick="question3a1()">ANSWER 1</button>
+			<button name="q3a2" class="a2Class" id="q3a2" onclick="question3a2()">ANSWER 2</button>
+			<button name="q3a3" class="a3Class" id="q3a3" onclick="question3a3()">ANSWER 3</button>
+			<button name="q3a4" class="a4Class" id="q3a4" onclick="question3a4()">ANSWER 4</button></p>
+			
+			<a class="questipnClass">QUESITION 4</a>
+			<p><button name="q4a1" class="a1Class" id="q4a1" onclick="question4a1()">ANSWER 1</button>
+			<button name="q4a2" class="a2Class" id="q4a2" onclick="question4a2()">ANSWER 2</button>
+			<button name="q4a3" class="a3Class" id="q4a3" onclick="question4a3()">ANSWER 3</button>
+			<button name="q4a4" class="a4Class" id="q4a4" onclick="question4a4()">ANSWER 4</button></p>
+			
+			<a class="questipnClass">QUESITION 5</a>
+			<p><button name="q5a1" class="a1Class" id="q5a1" onclick="question5a1()">ANSWER 1</button>
+			<button name="q5a2" class="a2Class" id="q5a2" onclick="question5a2()">ANSWER 2</button>
+			<button name="q5a3" class="a3Class" id="q5a3" onclick="question5a3()">ANSWER 3</button>
+			<button name="q5a4" class="a4Class" id="q5a4" onclick="question5a4()">ANSWER 4</button></p>
+			
+			<a class="questipnClass">QUESITION 6</a>
+			<p><button name="q6a1" class="a1Class" id="q6a1" onclick="question6a1()">ANSWER 1</button>
+			<button name="q6a2" class="a2Class" id="q6a2" onclick="question6a2()">ANSWER 2</button>
+			<button name="q4a3" class="a3Class" id="q6a3" onclick="question6a3()">ANSWER 3</button>
+			<button name="q4a4" class="a4Class" id="q6a4" onclick="question6a4()">ANSWER 4</button></p>
+			
+			<a class="questipnClass">QUESITION 7</a>
+			<p><button name="q7a1" class="a1Class" id="q7a1" onclick="question7a1()">ANSWER 1</button>
+			<button name="q7a2" class="a2Class" id="q7a2" onclick="question7a2()">ANSWER 2</button>
+			<button name="q7a3" class="a3Class" id="q7a3" onclick="question7a3()">ANSWER 3</button>
+			<button name="q7a4" class="a4Class" id="q7a4" onclick="question7a4()">ANSWER 4</button></p>
+			
+			<p><button name="showClass" class="showClass" id="showButton" onclick="show()">CHECK</button></p>
+		</main>
+		
+		<footer>
+		    <p><label id="resultLabel"></label></p>
+			<p><label class="rightClass" id="q1ResultLabel"></label>
+			<label class="wrongClass" id="q1ResultLabelWrong"></label></p>
+			<p><label class="rightClass" id="q2ResultLabel"></label>
+			<label class="wrongClass" id="q2ResultLabelWrong"></label></p>
+			<p><label class="rightClass" id="q3ResultLabel"></label>
+			<label class="wrongClass" id="q3ResultLabelWrong"></label></p>
+			<p><label class="rightClass" id="q4ResultLabel"></label>
+			<label class="wrongClass" id="q4ResultLabelWrong"></label></p>
+			<p><label class="rightClass" id="q5ResultLabel"></label>
+			<label class="wrongClass" id="q5ResultLabelWrong"></label></p>
+			<p><label class="rightClass" id="q6ResultLabel"></label>
+			<label class="wrongClass" id="q6ResultLabelWrong"></label></p>
+			<p><label class="rightClass" id="q7ResultLabel"></label>
+			<label class="wrongClass" id="q7ResultLabelWrong"></label></p>
+		</footer>
+<script>
+    
+	var q1Answer = "";
+	var q2Answer = "";
+	var q3Answer = "";
+	var q4Answer = "";
+	var q5Answer = "";
+	var q6Answer = "";
+	var q7Answer = "";
+	
+	var q1Clear = "1";
+	var q2Clear = "1";
+	var q3Clear = "1";
+	var q4Clear = "1";
+	var q5Clear = "1";
+	var q6Clear = "1";
+	var q7Clear = "1";
+	
+	var showVar = "";
+	
+	
+	//var clear_text = "Hallo";
+	//var obfuscated_text = btoa (clear_text);
+	/*var obfuscated_text = "SGFsbG8=";
+    console.log(obfuscated_text);
+	var decoded_text = atob (obfuscated_text);
+	console.log(decoded_text);*/
+	
+	function question1a1(){
+		    q1Answer = "a1a1";
+		//console.log(q1Answer);
+	}
+	
+	function question1a2(){
+	    q1Answer = "a1a2";
+		//console.log(q1Answer);
+	}
+	
+	function question1a3(){
+	    q1Answer = "a1a3";
+		//console.log(q1Answer);
+	}
+	
+	function question1a4(){
+	    q1Answer = "a1a4";
+		//console.log(q1Answer);
+	}
+	
+	
+	
+	function question2a1(){
+	    q2Answer = "a2a1";
+		//console.log(q1Answer);
+	}
+	
+	function question2a2(){
+	    q2Answer = "a2a2";
+		//console.log(q1Answer);
+	}
+	
+	function question2a3(){
+	    q2Answer = "a2a3";
+		//console.log(q1Answer);
+	}
+	
+	function question2a4(){
+	    q2Answer = "a2a4";
+		//console.log(q1Answer);
+	}
+	
+	
+	
+	
+	function question3a1(){
+	    q3Answer = "a3a1";
+		//console.log(q1Answer);
+	}
+	
+	function question3a2(){
+	    q3Answer = "a3a2";
+		//console.log(q1Answer);
+	}
+	
+	function question3a3(){
+	    q3Answer = "a3a3";
+		//console.log(q1Answer);
+	}
+	
+	function question3a4(){
+	    q3Answer = "a3a4";
+		//console.log(q1Answer);
+	}
+	
+	
+	
+	
+	function question4a1(){
+	    q4Answer = "a4a1";
+		//console.log(q1Answer);
+	}
+	
+	function question4a2(){
+	    q4Answer = "a4a2";
+		//console.log(q1Answer);
+	}
+	
+	function question4a3(){
+	    q4Answer = "a4a3";
+		//console.log(q1Answer);
+	}
+	
+	function question4a4(){
+	    q4Answer = "a4a4";
+		//console.log(q1Answer);
+	}
+	
+	
+	
+	
+	function question5a1(){
+	    q5Answer = "a5a1";
+		//console.log(q1Answer);
+	}
+	
+	function question5a2(){
+	    q5Answer = "a5a2";
+		//console.log(q1Answer);
+	}
+	
+	function question5a3(){
+	    q5Answer = "a5a3";
+		//console.log(q1Answer);
+	}
+	
+	function question5a4(){
+	    q5Answer = "a5a4";
+		//console.log(q1Answer);
+	}
+	
+	
+	
+	
+	function question6a1(){
+	    q6Answer = "a6a1";
+		//console.log(q1Answer);
+	}
+	
+	function question6a2(){
+	    q6Answer = "a6a2";
+		//console.log(q1Answer);
+	}
+	
+	function question6a3(){
+	    q6Answer = "a6a3";
+		//console.log(q1Answer);
+	}
+	
+	function question6a4(){
+	    q6Answer = "a6a4";
+		//console.log(q1Answer);
+	}
+	
+	
+	
+	
+	function question7a1(){
+	    q7Answer = "a7a1";
+		//console.log(q1Answer);
+	}
+	
+	function question7a2(){
+	    q7Answer = "a7a2";
+		//console.log(q1Answer);
+	}
+	
+	function question7a3(){
+	    q7Answer = "a7a3";
+		//console.log(q1Answer);
+	}
+	
+	function question7a4(){
+	    q7Answer = "a7a4";
+		//console.log(q1Answer);
+	}
+	
+	
+	
+	function show(){
+	
+	if(showVar==""){
+	
+		console.log("Q1: " + q1Answer);
+		console.log("Q2: " + q2Answer);
+		console.log("Q3: " + q3Answer);
+		console.log("Q4: " + q4Answer);
+		console.log("Q5: " + q5Answer);
+		console.log("Q6: " + q6Answer);
+		console.log("Q7: " + q7Answer);
+		
+		
+		
+		/*document.getElementById("q2ResultLabel").textContent = q2Answer;
+		document.getElementById("q3ResultLabel").textContent = q3Answer;
+		document.getElementById("q4ResultLabel").textContent = q4Answer;
+		document.getElementById("q5ResultLabel").textContent = q5Answer;
+		document.getElementById("q6ResultLabel").textContent = q6Answer;
+		document.getElementById("q7ResultLabel").textContent = q7Answer;*/
+		
+		
+		document.getElementById("resultLabel").textContent = "RESULTS:";
+		
+	    q1Answer = btoa(q1Answer);
+		q2Answer = btoa(q2Answer);
+		q3Answer = btoa(q3Answer);
+		q4Answer = btoa(q4Answer);
+		q5Answer = btoa(q5Answer);
+		q6Answer = btoa(q6Answer);
+		q7Answer = btoa(q7Answer);
+		
+		if(q1Answer=="YTFhMw=="){
+		    document.getElementById("q1ResultLabel").textContent = "1: RIGHT";
+			document.getElementById("q1ResultLabelWrong").textContent = "";
+		}
+		
+		if(q1Answer!="YTFhMw=="){
+		    document.getElementById("q1ResultLabelWrong").textContent = "1: WRONG";
+			document.getElementById("q1ResultLabel").textContent = "";
+		}
+		
+		if(q2Answer=="YTJhMQ=="){
+		    document.getElementById("q2ResultLabel").textContent = "2: RIGHT";
+			document.getElementById("q2ResultLabelWrong").textContent = "";
+		}
+		
+		if(q2Answer!="YTJhMQ=="){
+		    document.getElementById("q2ResultLabelWrong").textContent = "2: WRONG";
+			document.getElementById("q2ResultLabel").textContent = "";
+		}
+		
+		////
+		
+		if(q3Answer=="YTNhMg=="){
+		    document.getElementById("q3ResultLabel").textContent = "3: RIGHT";
+			document.getElementById("q3ResultLabelWrong").textContent = "";
+		}
+		
+		if(q3Answer!="YTNhMg=="){
+		    document.getElementById("q3ResultLabelWrong").textContent = "3: WRONG";
+			document.getElementById("q3ResultLabel").textContent = "";
+		}
+		
+		////
+		
+		if(q4Answer=="YTRhMw=="){
+		    document.getElementById("q4ResultLabel").textContent = "4: RIGHT";
+			document.getElementById("q4ResultLabelWrong").textContent = "";
+		}
+		
+		if(q4Answer!="YTRhMw=="){
+		    document.getElementById("q4ResultLabelWrong").textContent = "4: WRONG";
+			document.getElementById("q4ResultLabel").textContent = "";
+		}
+		
+		////
+		
+		if(q5Answer=="YTVhMw=="){
+		    document.getElementById("q5ResultLabel").textContent = "5: RIGHT";
+			document.getElementById("q5ResultLabelWrong").textContent = "";
+		}
+		
+		if(q5Answer!="YTVhMw=="){
+		    document.getElementById("q5ResultLabelWrong").textContent = "5: WRONG";
+			document.getElementById("q5ResultLabel").textContent = "";
+		}
+		
+		////
+		
+		if(q6Answer=="YTZhMQ=="){
+		    document.getElementById("q6ResultLabel").textContent = "6: RIGHT";
+			document.getElementById("q6ResultLabelWrong").textContent = "";
+		}
+		
+		if(q6Answer!="YTZhMQ=="){
+		    document.getElementById("q6ResultLabelWrong").textContent = "6: WRONG";
+			document.getElementById("q6ResultLabel").textContent = "";
+		}
+		
+		////
+		
+		if(q7Answer=="YTdhMQ=="){
+		    document.getElementById("q7ResultLabel").textContent = "7: RIGHT";
+			document.getElementById("q7ResultLabelWrong").textContent = "";
+		}
+		
+		if(q7Answer!="YTdhMQ=="){
+		    document.getElementById("q7ResultLabelWrong").textContent = "7: WRONG";
+			document.getElementById("q7ResultLabel").textContent = "";
+		}
+		
+		showVar = "done";
+		
+		}
+	}
+	
+	
+	
+	
+</script>
+	</body>
+</html>

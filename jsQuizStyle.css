@@ -1,0 +1,109 @@
+body{
+	text-align: center;
+}
+
+.rightClass{
+	color: green;
+}
+
+.wrongClass{
+	color: red;
+}
+
+#showButton{
+	height: 38px;
+	width: 120px;
+	border: 3px solid #189535;
+	color: #189535;
+	background-color: #fff;
+}
+
+#showButton:hover{
+	background-color: #189535;
+	color: #fff;
+}
+
+#q1ResultLabel{
+	color: green;
+}
+
+#q1ResultLabelWrong{
+	color: red;
+}
+
+.rightClass{
+	color: green;
+}
+
+.wrongClass{
+	color: red;
+}
+
+
+
+.a1Class{
+	height: 31px;
+	width: 95px;
+	border: 2px solid #23dec2;
+	background-color: #fff;
+	color: #23dec2;
+}
+
+.a1Class:hover{
+	background-color: #23dec2;
+	color: #fff;
+}
+
+
+.a2Class{
+	height: 31px;
+	width: 95px;
+	border: 2px solid #0ba0b6;
+	background-color: #fff;
+	color: #0ba0b6;
+}
+
+.a2Class:hover{
+	background-color: #0ba0b6;
+	color: #fff;
+}
+
+
+.a3Class{
+	height: 31px;
+	width: 95px;
+	border: 2px solid #0b67b6;
+	background-color: #fff;
+	color: #0b67b6;
+}
+
+.a3Class:hover{
+	background-color: #0b67b6;
+	color: #fff;
+}
+
+
+.a4Class{
+	height: 31px;
+	width: 95px;
+	border: 2px solid #0a338b;
+	background-color: #fff;
+	color: #0a338b;
+}
+
+.a4Class:hover{
+	background-color: #0a338b;
+	color: #fff;
+}
+
+.questipnClass{
+	color: #7d7f7e;
+}
+
+h1{
+	color: #666666;
+}
+
+#resultLabel{
+	color: #8a8a8a;
+}
