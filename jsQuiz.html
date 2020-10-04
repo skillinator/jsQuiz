@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="jsQuizStyle.css">
+    <link rel="stylesheet" href="jsQuizStyle2.css">
     <body>
 	    
 		<title>jsQuiz</title>
@@ -117,9 +117,32 @@
 	var decoded_text = atob (obfuscated_text);
 	console.log(decoded_text);*/
 	
+	/*function style_field (e1, e2, e3, e4) {
+		document.getElementById(e1).style.backgroundColor = "#145aab";
+		document.getElementById(e1).style.color = "white";
+		document.getElementById(e1).style.borderColor = "#145aab";
+		
+		//setOtherToNormal
+		
+		document.getElementById(e2).style.backgroundColor = "#fff";
+		document.getElementById(e2).style.color = "#0ba0b6";
+		document.getElementById(e2).style.borderColor = "#0ba0b6";
+		
+		document.getElementById(e3).style.backgroundColor = "#fff";
+		document.getElementById(e3).style.color = "#0b67b6";
+		document.getElementById(e3).style.borderColor = "#0b67b6";
+		
+		document.getElementById(e4).style.backgroundColor = "#fff";
+		document.getElementById(e4).style.color = "#0a338b";
+		document.getElementById(e4).style.borderColor = "#0a338b";
+	
+	}*/
+	
 	function question1a1(){
 		q1Answer = "a1a1";
 		q1ForCheckColor = "q1a1";
+		
+		
 		document.getElementById("q1a1").style.backgroundColor = "#145aab";
 		document.getElementById("q1a1").style.color = "white";
 		document.getElementById("q1a1").style.borderColor = "#145aab";
@@ -137,7 +160,7 @@
 		document.getElementById("q1a4").style.backgroundColor = "#fff";
 		document.getElementById("q1a4").style.color = "#0a338b";
 		document.getElementById("q1a4").style.borderColor = "#0a338b";
-		//console.log(q1Answer);
+		console.log(q1Answer);
 	}
 	
 	function question1a2(){
@@ -812,6 +835,14 @@
 		forColorChangeQ6 = q6ForCheckColor;
 		forColorChangeQ7 = q7ForCheckColor;
 		
+		console.log(btoa(q1ForCheckColor));
+		console.log(btoa(q2ForCheckColor));
+		console.log(btoa(q3ForCheckColor));
+		console.log(btoa(q4ForCheckColor));
+		console.log(btoa(q5ForCheckColor));
+		console.log(btoa(q6ForCheckColor));
+		console.log(btoa(q7ForCheckColor));
+		
 	    q1Answer = btoa(q1Answer);
 		q2Answer = btoa(q2Answer);
 		q3Answer = btoa(q3Answer);
@@ -834,6 +865,10 @@
 			document.getElementById(forColorChangeQ1).style.backgroundColor = "red";
 			document.getElementById(forColorChangeQ1).style.color = "white";
 			document.getElementById(forColorChangeQ1).style.borderColor = "red";
+			
+			document.getElementById(atob("cTFhMw==")).className = "falseAnswerShowClass";
+			/*document.getElementById(atob("cTFhMw==")).style.color = "white";
+			document.getElementById(atob("cTFhMw==")).style.borderColor = "orange";*/
 		}
 		
 		if(q2Answer=="YTJhMQ=="){
@@ -850,6 +885,8 @@
 			document.getElementById(forColorChangeQ2).style.backgroundColor = "red";
 			document.getElementById(forColorChangeQ2).style.color = "white";
 			document.getElementById(forColorChangeQ2).style.borderColor = "red";
+			
+			document.getElementById(atob("cTJhMQ==")).className = "falseAnswerShowClass";
 		}
 		
 		////
@@ -868,6 +905,8 @@
 			document.getElementById(forColorChangeQ3).style.backgroundColor = "red";
 			document.getElementById(forColorChangeQ3).style.color = "white";
 			document.getElementById(forColorChangeQ3).style.borderColor = "red";
+			
+			document.getElementById(atob("cTNhMg==")).className = "falseAnswerShowClass";
 		}
 		
 		////
@@ -886,6 +925,8 @@
 			document.getElementById(forColorChangeQ4).style.backgroundColor = "red";
 			document.getElementById(forColorChangeQ4).style.color = "white";
 			document.getElementById(forColorChangeQ4).style.borderColor = "red";
+			
+			document.getElementById(atob("cTRhMw==")).className = "falseAnswerShowClass";
 		}
 		
 		////
@@ -904,6 +945,8 @@
 			document.getElementById(forColorChangeQ5).style.backgroundColor = "red";
 			document.getElementById(forColorChangeQ5).style.color = "white";
 			document.getElementById(forColorChangeQ5).style.borderColor = "red";
+			
+			document.getElementById(atob("cTVhMw==")).className = "falseAnswerShowClass";
 		}
 		
 		////
@@ -922,6 +965,8 @@
 			document.getElementById(forColorChangeQ6).style.backgroundColor = "red";
 			document.getElementById(forColorChangeQ6).style.color = "white";
 			document.getElementById(forColorChangeQ6).style.borderColor = "red";
+			
+			document.getElementById(atob("cTZhMQ==")).className = "falseAnswerShowClass";
 		}
 		
 		////
@@ -940,6 +985,8 @@
 			document.getElementById(forColorChangeQ7).style.backgroundColor = "red";
 			document.getElementById(forColorChangeQ7).style.color = "white";
 			document.getElementById(forColorChangeQ7).style.borderColor = "red";
+			
+			document.getElementById(atob("cTdhMQ==")).className = "falseAnswerShowClass";
 		}
 		
 		showVar = "done";
