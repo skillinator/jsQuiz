@@ -90,6 +90,23 @@
 	var q6Clear = "1";
 	var q7Clear = "1";
 	
+	var forColorChangeQ1 = "";
+	var forColorChangeQ2 = "";
+	var forColorChangeQ3 = "";
+	var forColorChangeQ4 = "";
+	var forColorChangeQ5 = "";
+	var forColorChangeQ6 = "";
+	var forColorChangeQ7 = "";
+	
+	var q1ForCheckColor = "";
+	var q2ForCheckColor = "";
+	var q3ForCheckColor = "";
+	var q4ForCheckColor = "";
+	var q5ForCheckColor = "";
+	var q6ForCheckColor = "";
+	var q7ForCheckColor = "";
+	
+	
 	var showVar = "";
 	
 	
@@ -101,22 +118,26 @@
 	console.log(decoded_text);*/
 	
 	function question1a1(){
-		    q1Answer = "a1a1";
+		q1Answer = "a1a1";
+		q1ForCheckColor = "q1a1";
 		//console.log(q1Answer);
 	}
 	
 	function question1a2(){
 	    q1Answer = "a1a2";
+		q1ForCheckColor = "q1a2";
 		//console.log(q1Answer);
 	}
 	
 	function question1a3(){
 	    q1Answer = "a1a3";
+		q1ForCheckColor = "q1a3";
 		//console.log(q1Answer);
 	}
 	
 	function question1a4(){
 	    q1Answer = "a1a4";
+		q1ForCheckColor = "q1a4";
 		//console.log(q1Answer);
 	}
 	
@@ -124,21 +145,25 @@
 	
 	function question2a1(){
 	    q2Answer = "a2a1";
+		q2ForCheckColor = "q2a1";
 		//console.log(q1Answer);
 	}
 	
 	function question2a2(){
 	    q2Answer = "a2a2";
+		q2ForCheckColor = "q2a2";
 		//console.log(q1Answer);
 	}
 	
 	function question2a3(){
 	    q2Answer = "a2a3";
+		q2ForCheckColor = "q2a3";
 		//console.log(q1Answer);
 	}
 	
 	function question2a4(){
 	    q2Answer = "a2a4";
+		q2ForCheckColor = "q2a4";
 		//console.log(q1Answer);
 	}
 	
@@ -147,21 +172,25 @@
 	
 	function question3a1(){
 	    q3Answer = "a3a1";
+		q3ForCheckColor = "q3a1";
 		//console.log(q1Answer);
 	}
 	
 	function question3a2(){
 	    q3Answer = "a3a2";
+		q3ForCheckColor = "q3a2";
 		//console.log(q1Answer);
 	}
 	
 	function question3a3(){
 	    q3Answer = "a3a3";
+		q3ForCheckColor = "q3a3";
 		//console.log(q1Answer);
 	}
 	
 	function question3a4(){
 	    q3Answer = "a3a4";
+		q3ForCheckColor = "q3a4";
 		//console.log(q1Answer);
 	}
 	
@@ -170,21 +199,25 @@
 	
 	function question4a1(){
 	    q4Answer = "a4a1";
+		q4ForCheckColor = "q4a1";
 		//console.log(q1Answer);
 	}
 	
 	function question4a2(){
 	    q4Answer = "a4a2";
+		q4ForCheckColor = "q4a2";
 		//console.log(q1Answer);
 	}
 	
 	function question4a3(){
 	    q4Answer = "a4a3";
+		q4ForCheckColor = "q4a3";
 		//console.log(q1Answer);
 	}
 	
 	function question4a4(){
 	    q4Answer = "a4a4";
+		q4ForCheckColor = "q4a4";
 		//console.log(q1Answer);
 	}
 	
@@ -193,21 +226,25 @@
 	
 	function question5a1(){
 	    q5Answer = "a5a1";
+		q5ForCheckColor = "q5a1";
 		//console.log(q1Answer);
 	}
 	
 	function question5a2(){
 	    q5Answer = "a5a2";
+		q5ForCheckColor = "q5a2";
 		//console.log(q1Answer);
 	}
 	
 	function question5a3(){
 	    q5Answer = "a5a3";
+		q5ForCheckColor = "q5a3";
 		//console.log(q1Answer);
 	}
 	
 	function question5a4(){
 	    q5Answer = "a5a4";
+		q5ForCheckColor = "q5a4";
 		//console.log(q1Answer);
 	}
 	
@@ -216,21 +253,25 @@
 	
 	function question6a1(){
 	    q6Answer = "a6a1";
+		q6ForCheckColor = "q6a1";
 		//console.log(q1Answer);
 	}
 	
 	function question6a2(){
 	    q6Answer = "a6a2";
+		q6ForCheckColor = "q6a2";
 		//console.log(q1Answer);
 	}
 	
 	function question6a3(){
 	    q6Answer = "a6a3";
+		q6ForCheckColor = "q6a3";
 		//console.log(q1Answer);
 	}
 	
 	function question6a4(){
 	    q6Answer = "a6a4";
+		q6ForCheckColor = "q6a4";
 		//console.log(q1Answer);
 	}
 	
@@ -239,21 +280,25 @@
 	
 	function question7a1(){
 	    q7Answer = "a7a1";
+		q7ForCheckColor = "q7a1";
 		//console.log(q1Answer);
 	}
 	
 	function question7a2(){
 	    q7Answer = "a7a2";
+		q7ForCheckColor = "q7a2";
 		//console.log(q1Answer);
 	}
 	
 	function question7a3(){
 	    q7Answer = "a7a3";
+		q7ForCheckColor = "q7a3";
 		//console.log(q1Answer);
 	}
 	
 	function question7a4(){
 	    q7Answer = "a7a4";
+		q7ForCheckColor = "q7a4";
 		//console.log(q1Answer);
 	}
 	
@@ -283,6 +328,14 @@
 		
 		document.getElementById("resultLabel").textContent = "RESULTS:";
 		
+		forColorChangeQ1 = q1ForCheckColor;
+		forColorChangeQ2 = q2ForCheckColor;
+		forColorChangeQ3 = q3ForCheckColor;
+		forColorChangeQ4 = q4ForCheckColor;
+		forColorChangeQ5 = q5ForCheckColor;
+		forColorChangeQ6 = q6ForCheckColor;
+		forColorChangeQ7 = q7ForCheckColor;
+		
 	    q1Answer = btoa(q1Answer);
 		q2Answer = btoa(q2Answer);
 		q3Answer = btoa(q3Answer);
@@ -294,21 +347,33 @@
 		if(q1Answer=="YTFhMw=="){
 		    document.getElementById("q1ResultLabel").textContent = "1: RIGHT";
 			document.getElementById("q1ResultLabelWrong").textContent = "";
+			document.getElementById(forColorChangeQ1).style.backgroundColor = "green";
+			document.getElementById(forColorChangeQ1).style.color = "white";
+			document.getElementById(forColorChangeQ1).style.borderColor = "green";
 		}
 		
 		if(q1Answer!="YTFhMw=="){
 		    document.getElementById("q1ResultLabelWrong").textContent = "1: WRONG";
 			document.getElementById("q1ResultLabel").textContent = "";
+			document.getElementById(forColorChangeQ1).style.backgroundColor = "red";
+			document.getElementById(forColorChangeQ1).style.color = "white";
+			document.getElementById(forColorChangeQ1).style.borderColor = "red";
 		}
 		
 		if(q2Answer=="YTJhMQ=="){
 		    document.getElementById("q2ResultLabel").textContent = "2: RIGHT";
 			document.getElementById("q2ResultLabelWrong").textContent = "";
+			document.getElementById(forColorChangeQ2).style.backgroundColor = "green";
+			document.getElementById(forColorChangeQ2).style.color = "white";
+			document.getElementById(forColorChangeQ2).style.borderColor = "green";
 		}
 		
 		if(q2Answer!="YTJhMQ=="){
 		    document.getElementById("q2ResultLabelWrong").textContent = "2: WRONG";
 			document.getElementById("q2ResultLabel").textContent = "";
+			document.getElementById(forColorChangeQ2).style.backgroundColor = "red";
+			document.getElementById(forColorChangeQ2).style.color = "white";
+			document.getElementById(forColorChangeQ2).style.borderColor = "red";
 		}
 		
 		////
@@ -316,11 +381,17 @@
 		if(q3Answer=="YTNhMg=="){
 		    document.getElementById("q3ResultLabel").textContent = "3: RIGHT";
 			document.getElementById("q3ResultLabelWrong").textContent = "";
+			document.getElementById(forColorChangeQ3).style.backgroundColor = "green";
+			document.getElementById(forColorChangeQ3).style.color = "white";
+			document.getElementById(forColorChangeQ3).style.borderColor = "green";
 		}
 		
 		if(q3Answer!="YTNhMg=="){
 		    document.getElementById("q3ResultLabelWrong").textContent = "3: WRONG";
 			document.getElementById("q3ResultLabel").textContent = "";
+			document.getElementById(forColorChangeQ3).style.backgroundColor = "red";
+			document.getElementById(forColorChangeQ3).style.color = "white";
+			document.getElementById(forColorChangeQ3).style.borderColor = "red";
 		}
 		
 		////
@@ -328,11 +399,17 @@
 		if(q4Answer=="YTRhMw=="){
 		    document.getElementById("q4ResultLabel").textContent = "4: RIGHT";
 			document.getElementById("q4ResultLabelWrong").textContent = "";
+			document.getElementById(forColorChangeQ4).style.backgroundColor = "green";
+			document.getElementById(forColorChangeQ4).style.color = "white";
+			document.getElementById(forColorChangeQ4).style.borderColor = "green";
 		}
 		
 		if(q4Answer!="YTRhMw=="){
 		    document.getElementById("q4ResultLabelWrong").textContent = "4: WRONG";
 			document.getElementById("q4ResultLabel").textContent = "";
+			document.getElementById(forColorChangeQ4).style.backgroundColor = "red";
+			document.getElementById(forColorChangeQ4).style.color = "white";
+			document.getElementById(forColorChangeQ4).style.borderColor = "red";
 		}
 		
 		////
@@ -340,11 +417,17 @@
 		if(q5Answer=="YTVhMw=="){
 		    document.getElementById("q5ResultLabel").textContent = "5: RIGHT";
 			document.getElementById("q5ResultLabelWrong").textContent = "";
+			document.getElementById(forColorChangeQ5).style.backgroundColor = "green";
+			document.getElementById(forColorChangeQ5).style.color = "white";
+			document.getElementById(forColorChangeQ5).style.borderColor = "green";
 		}
 		
 		if(q5Answer!="YTVhMw=="){
 		    document.getElementById("q5ResultLabelWrong").textContent = "5: WRONG";
 			document.getElementById("q5ResultLabel").textContent = "";
+			document.getElementById(forColorChangeQ5).style.backgroundColor = "red";
+			document.getElementById(forColorChangeQ5).style.color = "white";
+			document.getElementById(forColorChangeQ5).style.borderColor = "red";
 		}
 		
 		////
@@ -352,11 +435,17 @@
 		if(q6Answer=="YTZhMQ=="){
 		    document.getElementById("q6ResultLabel").textContent = "6: RIGHT";
 			document.getElementById("q6ResultLabelWrong").textContent = "";
+			document.getElementById(forColorChangeQ6).style.backgroundColor = "green";
+			document.getElementById(forColorChangeQ6).style.color = "white";
+			document.getElementById(forColorChangeQ6).style.borderColor = "green";
 		}
 		
 		if(q6Answer!="YTZhMQ=="){
 		    document.getElementById("q6ResultLabelWrong").textContent = "6: WRONG";
 			document.getElementById("q6ResultLabel").textContent = "";
+			document.getElementById(forColorChangeQ6).style.backgroundColor = "red";
+			document.getElementById(forColorChangeQ6).style.color = "white";
+			document.getElementById(forColorChangeQ6).style.borderColor = "red";
 		}
 		
 		////
@@ -364,11 +453,17 @@
 		if(q7Answer=="YTdhMQ=="){
 		    document.getElementById("q7ResultLabel").textContent = "7: RIGHT";
 			document.getElementById("q7ResultLabelWrong").textContent = "";
+			document.getElementById(forColorChangeQ7).style.backgroundColor = "green";
+			document.getElementById(forColorChangeQ7).style.color = "white";
+			document.getElementById(forColorChangeQ7).style.borderColor = "green";
 		}
 		
 		if(q7Answer!="YTdhMQ=="){
 		    document.getElementById("q7ResultLabelWrong").textContent = "7: WRONG";
 			document.getElementById("q7ResultLabel").textContent = "";
+			document.getElementById(forColorChangeQ7).style.backgroundColor = "red";
+			document.getElementById(forColorChangeQ7).style.color = "white";
+			document.getElementById(forColorChangeQ7).style.borderColor = "red";
 		}
 		
 		showVar = "done";
